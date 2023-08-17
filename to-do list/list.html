@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="list.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>قائمة المهام</title>
+</head>
+<body>
+    <div class="main">
+        <div class="center">
+  <h1 style="text-align: center;">قائمة المهام</h1>
+  <input type="text" id="taskInput" placeholder="أضف مهمة">
+  <button onclick="addTask()">إضافة</button>
+
+    </div>
+    <div class="ss" style="text-align: left;">
+  <ul id="taskList"></ul>
+    </div>
+</div>
+  <script>
+
+  
+const taskInput = document.getElementById('taskInput');
+const taskList = document.getElementById('taskList');
+
+function addTask() {
+  const taskText = taskInput.value.trim();
+  if (taskText !== '') {
+    const taskItem = document.createElement('li');
+    taskItem.textContent = taskText;
+    taskList.appendChild(taskItem);
+    taskInput.value = '';
+  }
+}
+
+taskInput.addEventListener('keydown', (event) => {
+  if (event.key === 'Enter') {
+    addTask();
+  }
+});
+</script>
+</body>
+</html>
+
+
+

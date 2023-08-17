@@ -1,0 +1,65 @@
+
+
+.main{
+    width: 300px;
+background-color: rgb(121, 91, 230);
+
+}
+
+
+.ss{
+
+    background-color: rgb(241, 240, 239);
+    text-align:left;
+}
+
+
+Body {
+    Font-family: Arial, sans-serif;
+    Background-color: #f4f4f4;
+    Margin: 0;
+    Display: flex;
+    Justify-content:top ;
+    Align-items: center;
+    Height: 100vh;
+    Flex-direction: column; /* تحديد توجيه عمودي للعناصر */
+  }
+  
+  H1 {
+    Margin-bottom: 20px;
+  }
+  
+  Input[type="text"] {
+    Padding: 10px;
+    Font-size: 16px;
+    Border: 1px solid #ccc;
+    Border-radius: 5px;
+    Margin-bottom: 10px;
+    
+  }
+  
+  Button {
+    Padding: 10px 20px;
+    Font-size: 16px;
+    Background-color: #007bff;
+    Color: #fff;
+    Border: none;
+    Border-radius: 5px;
+    Cursor: pointer;
+  }
+  
+  Button:hover {
+    Background-color: #0056b3;
+  }
+  
+  Ul {
+    List-style: none;
+    Padding: 0;
+    Margin: 0;
+    Text-align:center ; /* توسيط العناصر داخل القائمة */
+  }
+  
+  Li {
+    Margin: 5px 0;
+    text-align: left;
+  }
